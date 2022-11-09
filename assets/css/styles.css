@@ -1,3 +1,78 @@
-body {
-  background-color: aqua;
+.header {
+  height: 100%;
+}
+.header-pic {
+  background: url(../img/jul-header.jpg)no-repeat center center content-box;
+  position: absolute;
+  background-size: cover;
+}
+
+.hamburger {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  box-shadow: 0 2px 2,5px rgba(0, 0, 0, 0,1);
+  border-radius: 10px;
+  display: flex;
+  cursor: pointer;
+  background-color: aliceblue;
+  opacity: 0.6;
+  float: right;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger span {
+  position: absolute;
+  width: 2.25rem;
+  height: .2rem;
+  background: #770808;
+  border-radius: .05rem;
+  transition: .5s;
+}
+
+.hamburger span:nth-child(1){
+  width: 1.35rem;
+  left: .4rem;
+  transform: translateY(-.7rem);
+}
+
+.hamburger span:nth-child(2){
+  width: 1rem;
+  left: .4rem;
+  transform: translateY(.7rem);
+}
+
+#ready {
+  margin-top: 11rem;
+  text-align: center;
+  position: relative;
+  background-color: aliceblue;
+  opacity: 0.6;
+  height: 8rem;
+  font-size: xxx-large;
+}
+
+.count-cont {
+  z-index: 1;
+ 
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: aliceblue;
+  opacity: 0.6;
+  padding-bottom: 2rem;
+  
+}
+
+.day,
+.hour,
+.min,
+.secs {
+  font-size: 3rem;
 }
