@@ -22,7 +22,7 @@
  */
 
  const countdown = () => {
-    const countDate = new Date ("December 22, 2022 23:59:59").getTime();
+    const countDate = new Date ("December 23, 2022 23:59:59").getTime();
     const now = new Date().getTime();
     const gap = countDate - now;
 
@@ -46,9 +46,10 @@
 
 setInterval(countdown, 1000)
 
+
 /** Hamburger menu */
-const menuHamburger = document.querySelector('.toggle');
+const menuHamburger = document.querySelector('.hamburger')
 
 menuHamburger.addEventListener('click', () => {
     menuHamburger.classlist.hamburger('active')
-});
+})
