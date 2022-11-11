@@ -1,3 +1,6 @@
+
+/*----------------------------- main image ----------------------------*/
+
 .header {
   height: 100%;
 }
@@ -7,7 +10,9 @@
   background-size: cover;
 }
 
-.hamburger {
+/*----------------------------- Hamburgermenu ------------------------*/
+
+.toggle {
   position: relative;
   width: 3rem;
   height: 3rem;
@@ -22,9 +27,10 @@
   margin-right: 1rem;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
-.hamburger span {
+.toggle span {
   position: absolute;
   width: 2.25rem;
   height: .2rem;
@@ -33,17 +39,35 @@
   transition: .5s;
 }
 
-.hamburger span:nth-child(1){
+.toggle span:nth-child(1){
   width: 1.35rem;
   left: .4rem;
   transform: translateY(-.7rem);
 }
 
-.hamburger span:nth-child(2){
+.toggle span:nth-child(2){
   width: 1rem;
   left: .4rem;
   transform: translateY(.7rem);
 }
+
+.toggle.active span:nth-child(3){
+  transform: translateX(4rem);
+}
+
+.toggle.active span:nth-child(1){
+  width: 2.25rem;
+  transform: translateY(0px) rotate(45deg);
+  transition-delay: .125s;
+}
+
+.toggle.active span:nth-child(2){
+  width: 2.25rem;
+  transform: translateY(0px) rotate(315deg);
+  transition-delay: .25s;
+}
+
+/*--------------------------------- typewriting effect -----------------------------*/
 
 #ready {
   margin-top: 11rem;
@@ -53,12 +77,10 @@
   opacity: 0.6;
   height: 8rem;
   font-size: xxx-large;
+  padding: 2rem;
 }
 
-.count-cont {
-  z-index: 1;
- 
-}
+/*---------------------------------- countdown ----------------------------------------*/
 
 .countdown {
   display: flex;
@@ -67,8 +89,17 @@
   background-color: aliceblue;
   opacity: 0.6;
   padding-bottom: 2rem;
-  
+  padding: 1rem;
 }
+
+.count-cont {
+z-index: 1;
+}
+/* 
+.cont-day {
+background-color: aliceblue;
+opacity: 0.6;
+} */
 
 .day,
 .hour,

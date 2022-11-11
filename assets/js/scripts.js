@@ -48,8 +48,8 @@ setInterval(countdown, 1000)
 
 
 /** Hamburger menu */
-const menuHamburger = document.querySelector('.hamburger')
+const menuHamburger = document.querySelector(".toggle");
 
-menuHamburger.addEventListener('click', () => {
-    menuHamburger.classlist.hamburger('active')
-})
+menuHamburger.addEventListener("click", () => {
+    menuHamburger.classList.toggle("active")
+});
